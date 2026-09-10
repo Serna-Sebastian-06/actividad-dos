@@ -1,1 +1,18 @@
+:root {
+  /* Fondos */
+  --bg-page: #f8fafc;        /* Slate 50: Fondo de la página web */
+  --bg-component: #ffffff;   /* Blanco Puro: Fondos de componentes */
 
+  /* Textos */
+  --text-title: #1e293b;     /* Slate 800: Títulos principales e importantes */
+  --text-brand: #0f172a;     /* Slate 900: Texto del logo y botones principales */
+  --text-subtitle: #475569;  /* Slate 600: Subtítulo secundario */
+  --text-body: #64748b;      /* Slate 500: Textos descriptivos y navegación */
+  --text-footer: #94a3b8;    /* Slate 400: Texto del pie de página */
+
+  /* Acentos y Acciones */
+  --color-accent: #10b981;   /* Emerald 500: CTA principal e icono del logo */
+
+  /* Bordes y Separadores */
+  --border-color: #e2e8f0;   /* Slate 200: Líneas delimitadoras (Header, footer, tarjetas) */
+}
