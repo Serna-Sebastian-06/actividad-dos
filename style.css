@@ -83,7 +83,7 @@ body {
 /* Botones */
 .btn-secondary {
   background-color: var(--color-accent);
-  color: var(--text-title);
+  color: #ffffff;
   border: 1px solid var(--border-color);
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
@@ -95,6 +95,7 @@ body {
 .btn-secondary:hover {
   background-color: var(--bg-page);
   border-color: var(--text-subtitle);
+  color: var(--text-title);
 }
 
 .button-start {
