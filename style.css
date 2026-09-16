@@ -117,3 +117,58 @@ body {
   transform: translateY(-2px);
 }
 
+/* Sección Hero */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 5%;
+}
+
+.hero-content {
+  flex: 1; /* Toma la mitad del espacio */
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1; /* Toma la otra mitad */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3rem; /* Tamaño grande como en la imagen */
+  color: var(--text-title);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: var(--text-subtitle);
+  margin-bottom: 2rem;
+  max-width: 90%; /* Para que el texto no llegue hasta el borde de la imagen */
+  line-height: 1.6;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1); /* Sombra suave como en el diseño */
+  object-fit: cover;
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero-text {
+  max-width: 100%;
+}
+
+
