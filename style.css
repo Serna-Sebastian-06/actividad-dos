@@ -1,18 +1,119 @@
 :root {
   /* Fondos */
-  --bg-page: #f8fafc;        /* Slate 50: Fondo de la página web */
-  --bg-component: #ffffff;   /* Blanco Puro: Fondos de componentes */
+  --bg-page: #f8fafc; /* Slate 50: Fondo de la página web */
+  --bg-component: #ffffff; /* Blanco Puro: Fondos de componentes */
 
   /* Textos */
-  --text-title: #1e293b;     /* Slate 800: Títulos principales e importantes */
-  --text-brand: #0f172a;     /* Slate 900: Texto del logo y botones principales */
-  --text-subtitle: #475569;  /* Slate 600: Subtítulo secundario */
-  --text-body: #64748b;      /* Slate 500: Textos descriptivos y navegación */
-  --text-footer: #94a3b8;    /* Slate 400: Texto del pie de página */
+  --text-title: #1e293b; /* Slate 800: Títulos principales e importantes */
+  --text-brand: #0f172a; /* Slate 900: Texto del logo y botones principales */
+  --text-subtitle: #475569; /* Slate 600: Subtítulo secundario */
+  --text-body: #64748b; /* Slate 500: Textos descriptivos y navegación */
+  --text-footer: #94a3b8; /* Slate 400: Texto del pie de página */
 
   /* Acentos y Acciones */
-  --color-accent: #10b981;   /* Emerald 500: CTA principal e icono del logo */
+  --color-accent: #10b981; /* Emerald 500: CTA principal e icono del logo */
 
   /* Bordes y Separadores */
-  --border-color: #e2e8f0;   /* Slate 200: Líneas delimitadoras (Header, footer, tarjetas) */
+  --border-color: #e2e8f0; /* Slate 200: Líneas delimitadoras (Header, footer, tarjetas) */
 }
+
+/* Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* Header & Navegación */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 5%;
+  background-color: var(--bg-component);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-brand);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+.nav-container {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: var(--text-body);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-container a:hover {
+  color: var(--text-brand);
+}
+
+/* Botones */
+.btn-secondary {
+  background-color: var(--color-accent);
+  color: var(--text-title);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-page);
+  border-color: var(--text-subtitle);
+}
+
+.button-start {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+.button-start:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+}
+
